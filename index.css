@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css?family=Big Shoulders Display');
+ 
+
+ 
+.nav-flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+    z-index: 100;
+    left: 0;
+    width: 100%;
+    padding: 0;
+   
+}
+
+.nav-flex-row li {
+    text-decoration: none;
+    list-style-type: none;
+    padding: 20px 15px;
+    
+}
+ 
+.nav-flex-row li a {
+    font-family: 'Big Shoulders display';
+    color: rgb(255, 255, 255);
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: 300;
+    text-decoration: none;
+    transition: .3s ease color;
+}
+li a:hover {
+    color: aquamarine;
+}
+
+.section-intro {
+    height: 820px;
+    background-image: url(img/background\ cover\ .jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+ 
+.section-intro h1 {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 10em;
+    font-weight: 700;
+    
+}
+h1.title-first-name {
+    color: aquamarine;
+} 
+.section-intro header {
+    display: flex;
+    flex: 4;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.link-to-book-wrapper {
+    flex: 0.3;
+}
+ 
+.about-section {
+    display: flex;
+    align-items: center;
+    padding: 50px 30px;
+    background-color: black;
+   
+}
+ 
+.link-to-book {
+    color: #ffffff;
+    display: block;
+    border: 2px solid #ffffff;
+    padding: 5px 10px;
+    transition: .3s;
+}
+
+a.link-to-book:hover {
+    background-color: #474747;
+    color: aquamarine;
+    text-decoration: none;
+    border: 2px solid aquamarine;
+}
+
+.about-section p,
+.about-section h3 {
+    text-align: center;
+    width: 60%;
+    margin: auto;
+    font-family: 'Big Shoulders Display';
+    font-size: 1.8em;
+    text-transform: uppercase;
+    color: rgb(160, 157, 157);
+    
+}
+
+.first-name {
+color: aquamarine;
+} 
+.carousel-inner {
+    height: 700px;
+    align-items: center;
+    background-color: black;
+    
+    
+}
+.slide-container {
+    background-size: cover;
+}
+.row-flex {
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+  
+}
+.row-flex-container {
+    background-size: cover;
+    
+}
+h3.booking {
+    color: aquamarine;
+}
+.flex-column-form {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin: 30px 20px;
+}
+
+.btn.btn-primary {
+    font-family: 'Big Shoulders Text';
+    color: aquamarine;
+    background-color: #95999e;
+    text-transform: uppercase;
+    font-size: 16px;
+    padding: 5px 10px;
+    letter-spacing: 2px;
+    border: 0;
+    transition: .3s ease background-color;
+}
+ 
+.btn.btn-primary:hover {
+    background-color: #747474;
+    color: aquamarine;
+}
+
+.opening-time,
+.contact-address {
+    flex: 1;
+    margin: 30px 20px;
+    font-size: 1.2em;
+    color: white;
+    
+}
+#status{
+    
+    display: inline;
+    color: greenyellow;
+   
+}
+#status.success{
+    color: greenyellow;
+    transition: 5s ease forwards;
+}
+#status.error {
+    color:salmon;
+    transition: 5s ease forwards;
+}
+@keyframes status {
+    0%{
+        opacity: 1;
+        pointer-events: all;
+    }
+    90%{opacity: 1;
+        pointer-events: all;
+    }
+    100%{opacity: 1;
+        pointer-events: none;
+    }
+}
+.form-group p {
+    font-size: 1.2em;
+    color: gray;
+}
+
+.opening-time p span,
+.contact-address p span {
+    display: block;
+}
+.opening-time h3,
+.contact-address h3 {
+    color: aquamarine;
+} 
+@media (min-width:577px) and (max-width: 800px) {
+ 
+    .section-intro {
+        height: 500px;
+    }
+
+    .about-section p,
+    .about-section h3 {
+        font-size: 20px;
+    }
+ 
+    .carousel-inner {
+        height: auto;
+    }
+ 
+    .row-flex {
+        display: flex;
+        flex-direction: column;
+    }
+}
+ 
+@media screen and (max-width: 576px) {
+    .section-intro {
+        height: 300px;
+    }
+ 
+    .about-section {
+        padding: 30px;
+    }
+ 
+    .section-intro h1 {
+        font-size: 2em;
+    }
+ 
+    .about-section p,
+    .about-section h3 {
+        font-size: 15px;
+    }
+ 
+    .carousel-inner {
+        height: auto;
+    }
+ 
+    .row-flex {
+        display: flex;
+        flex-direction: column;
+    }
+ 
+    .row-flex h3 {
+        font-size: 25px;
+        text-align: center;
+    }
+ 
+    .form-group p {
+        font-size: 15px;
+    }
+ 
+    .opening-time p span,
+    .contact-address p span {
+        font-size: 15px;
+        text-align: center;
+    }
+
+}
